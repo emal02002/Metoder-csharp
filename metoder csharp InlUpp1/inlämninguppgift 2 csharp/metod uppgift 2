@@ -1,0 +1,25 @@
+using System;
+
+namespace metod_uppgift_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("skriv ett flyttal");
+            double tal1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("skriv ett flyttal");
+            double tal2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("skriv ett flyttal");
+            double tal3 = int.Parse(Console.ReadLine());
+            Console.WriteLine(medeltal(tal1, tal2, tal3));
+            
+        }
+        static double medeltal(double t1, double t2, double t3)
+        {
+            Console.WriteLine("Medelvärdet är:");
+            return (t1 + t2 + t3) / 3;
+        }
+    }
+
+}
